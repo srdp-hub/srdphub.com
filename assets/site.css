@@ -355,7 +355,7 @@ a.card:hover { transform: translate(-4px, -4px); box-shadow: var(--shadow-hard);
 .footer-base a { color: rgba(251,250,246,.75); }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1060px) {
+@media (max-width: 1140px) {
   .nav-links { display: none; }
   .nav-burger { display: flex; }
 }

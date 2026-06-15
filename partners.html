@@ -55,6 +55,10 @@
   .partner-row .about p { margin: 0; font-size: 17px; color: var(--ink-70); max-width: 56ch; }
   .partner-row .roles { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
   .partner-row .site { font-family: var(--font-mono); font-size: 13.5px; white-space: nowrap; }
+  .partner-row .ident.person { gap: 18px; }
+  .partner-row .ident.person .ph { height: 62px; width: 62px; border-radius: 50%; object-fit: cover; object-position: center 28%; max-height: none; max-width: none; border: 2px solid var(--ink); flex: none; }
+  .partner-row .ident.person .ph.mono { display: flex; align-items: center; justify-content: center; background: var(--cyan); color: var(--ink); font-family: var(--font-display); font-weight: 700; font-size: 22px; }
+  .partner-row .ident.person .nm { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1.05; letter-spacing: -0.01em; }
 
   /* kindred missions */
   .kindred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
@@ -90,6 +94,7 @@
       <a href="cases.html">Cases</a>
       <a href="partners.html" aria-current="page">Partners</a>
       <a href="join.html"><span lang="nl">Doe mee</span><span lang="en">Get involved</span></a>
+      <a href="https://docs.srdphub.com/">Developer docs</a>
     </div>
     <a class="nav-gh" href="https://github.com/srdp-hub" aria-label="GitHub" title="GitHub">
       <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
@@ -106,6 +111,7 @@
     <a href="cases.html">Cases</a>
     <a href="partners.html" aria-current="page">Partners</a>
     <a href="join.html"><span lang="nl">Doe mee</span><span lang="en">Get involved</span></a>
+    <a href="https://docs.srdphub.com/">Developer docs</a>
     <a href="contact.html"><span lang="nl">Praat met een partner →</span><span lang="en">Talk to a partner →</span></a>
   </div>
 </nav>
@@ -145,8 +151,8 @@
 <section class="sec" data-screen-label="Partner profiles">
   <div class="wrap">
     <p class="eyebrow"><span lang="nl">Founding partners</span><span lang="en">Founding partners</span></p>
-    <h2 lang="nl">De vier die begonnen.</h2>
-    <h2 lang="en">The four who started.</h2>
+    <h2 lang="nl">De partners van het eerste uur.</h2>
+    <h2 lang="en">The partners from day one.</h2>
     <p class="sub" lang="nl">In alfabetische volgorde. De coöperatie staat open voor nieuwe partners.</p>
     <p class="sub" lang="en">In alphabetical order. The cooperative is open to new partners.</p>
     <span class="draft-note" style="margin-bottom: 36px" lang="nl">Conceptprofielen — elke partner scherpt eigen tekst en logo nog aan.</span>
@@ -204,6 +210,23 @@
         </div>
         <a class="site" href="https://timformatie.nl" rel="external">timformatie.nl →</a>
       </div>
+
+      <div class="partner-row">
+        <div class="ident person">
+          <img class="ph" src="https://yannickvinkesteijn.com/images/yannick_new-min.png" alt="Yannick Vinkesteijn" onerror="this.onerror=null;this.outerHTML='<span class=&quot;ph mono&quot;>YV</span>'">
+          <span class="nm">Yannick<br>Vinkesteijn</span>
+        </div>
+        <div class="about">
+          <p lang="nl">Lead developer bij DHD en data scientist met een achtergrond in computational science. Ze bouwt aan federatief leren over ziekenhuizen heen en draagt vanuit de praktijk bij aan de open SRDP-blauwdruk.</p>
+          <p lang="en">Lead developer at DHD and a data scientist with a background in computational science. She builds federated learning across hospitals and contributes to the open SRDP blueprint from hands-on practice.</p>
+          <div class="roles">
+            <span class="tag">Lead developer · DHD</span>
+            <span class="tag">Data engineering</span>
+            <span class="tag">AI &amp; data science</span>
+          </div>
+        </div>
+        <a class="site" href="https://yannickvinkesteijn.com/" rel="external">yannickvinkesteijn.com →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -225,7 +248,8 @@
         <a class="lnk" href="https://www.rijksorganisatieodi.nl/rijks-ict-gilde">rijksorganisatieodi.nl/rijks-ict-gilde →</a>
       </div>
       <div class="card">
-        <img class="pl" src="assets/mozilla/MoFo_PrimaryLogo_Light.svg" alt="Mozilla Foundation">
+        <span class="tag"><span lang="nl">Open internet</span><span lang="en">Open internet</span></span>
+        <h3>Mozilla Foundation</h3>
         <p lang="nl">Onze visuele identiteit is gebouwd met de open brand resources van de Mozilla Foundation, waarvoor dank. Belangrijker: hun werk aan een gezond, open internet is de richting waarin ook wij bewegen.</p>
         <p lang="en">Our visual identity is built with the Mozilla Foundation's open brand resources, with thanks. More importantly: their work towards a healthy, open internet is the direction we are moving in too.</p>
         <a class="lnk" href="https://www.mozillafoundation.org">mozillafoundation.org →</a>
@@ -272,6 +296,7 @@
         <h5><span lang="nl">Open</span><span lang="en">Open</span></h5>
         <ul>
           <li><a href="https://github.com/srdp-hub">GitHub</a></li>
+          <li><a href="https://docs.srdphub.com/">Developer docs</a></li>
           <li><a href="mailto:hello@srdphub.com">hello@srdphub.com</a></li>
           <li><a href="https://www.rijksorganisatieodi.nl/rijks-ict-gilde">Rijks ICT Gilde</a></li>
           <li><a href="https://www.mozillafoundation.org">Mozilla Foundation</a></li>
